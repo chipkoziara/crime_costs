@@ -2,7 +2,7 @@
 _An R script that calculates the total cost of crime for neighborhoods using the RAND Corporation's cost of crime values_
 
 <img src="img/phl.png" width="500px" alt="Cost of Crime for Philadelphia Neighborhoods">
-_This shows the crime type with the greatest cost for each neighborhood in 2015_
+<br>_This shows the crime type with the greatest cost for each neighborhood in 2015_
 
 **What does this do?**
 This R script counts the number of crimes in each Philadelphia neighborhood and calculates the cost of each type of crime. Values for the total cost of all crimes per neighborhood, as well as which crime type has the highest cost per neighborhood, are also calculated.
