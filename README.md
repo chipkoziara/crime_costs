@@ -11,6 +11,17 @@ The script outputs two shapefiles, one for neighborhoods and the other for Censu
 
 I've included a QGIS project file with styling (shown above) that highlights the crime type that represents the greatest cost for that polygon.
 
+**How can I run this myself?**
+These instructions assume you have R installed:
+1) Clone the repo
+2) Run the script from the script's directory with `Rscript cost_of_crime.R`
+3) Check the `output` directory for the shapefiles created from the script
+
+Notes:
+>_The script requires the `input` directory.
+>The `output` directory is included for reference. 
+>This script is configured to overwrite the contents of `output`._
+
 **What are next steps?**
 I plan to make it easier to plug in a new city's open crime data and neighborhood shapefile to make this portable to other municipalities.
 
