@@ -17,10 +17,12 @@ These instructions assume you have R installed:
 2) Run the script from the script's directory with `Rscript cost_of_crime.R`
 3) Check the `output` directory for the shapefiles created from the script
 
-Notes:
->_The script requires the `input` directory.
->The `output` directory is included for reference. 
->This script is configured to overwrite the contents of `output`._
+Related notes:
+>_The script requires the `input` directory._
+
+>_The `output` directory is included for reference._
+
+>_This script is configured to overwrite the contents of `output`._
 
 **What are next steps?**
 I plan to make it easier to plug in a new city's open crime data and neighborhood shapefile to make this portable to other municipalities.
