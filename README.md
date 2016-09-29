@@ -19,11 +19,11 @@ These instructions assume you have R installed:
 3. Check the `output` directory for the shapefiles created from the script
 
 Related notes:
->_The script requires the `input` directory._
+>_The script requires the `input` directory_
 
->_The `output` directory is included for reference._
+>_The `output` directory is included for reference_
 
->_This script is configured to overwrite the contents of `output`._
+>_This script is configured to overwrite the contents of `output`_
 
 **What are next steps?**
 I plan to make it easier to plug in a new city's open crime data and neighborhood shapefile to make this portable to other municipalities.
