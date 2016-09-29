@@ -14,9 +14,9 @@ I've included a QGIS project file with styling (shown above) that highlights the
 **How can I run this myself?**
 These instructions assume you have R installed:
 
-1) Clone the repo
-2) Run the script from the script's directory with `Rscript cost_of_crime.R`
-3) Check the `output` directory for the shapefiles created from the script
+1. Clone the repo
+2. Run the script from the script's directory with `Rscript cost_of_crime.R`
+3. Check the `output` directory for the shapefiles created from the script
 
 Related notes:
 >_The script requires the `input` directory._
