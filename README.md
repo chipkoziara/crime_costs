@@ -1,6 +1,8 @@
 # Cost of Crime Calculator
 _An R script that calculates the total cost of crime for neighborhoods using the RAND Corporation's cost of crime values_
 
+See the output in a web map (here)[https://chipkoziara.github.io/crime_costs/]! It's also hosted as _index.html_.
+
 <img src="img/phl.png" width="500px" alt="Cost of Crime for Philadelphia Neighborhoods">
 <br>_This shows the crime type with the greatest cost for each neighborhood in 2015_
 
@@ -28,7 +30,7 @@ Related notes:
 **What are next steps?**
 I plan to make it easier to plug in a new city's open crime data and neighborhood shapefile to make this portable to other municipalities.
 
-I also plan to introduce a web-based map that makes it easy to explore this data in the browser.
+~I also plan to introduce a web-based map that makes it easy to explore this data in the browser.~
 
 **Special Thanks**
 I'm using the the City of Philadelphia's [open crime data](https://www.opendataphilly.org/dataset/crime-incidents), the RAND Corporation's [cost of crime calculator](http://www.rand.org/jie/justice-policy/centers/quality-policing/cost-of-crime.html) values, and Azavea's excellent [Philadelphia neighborhoods](https://github.com/azavea/geo-data/tree/master/Neighborhoods_Philadelphia) shapefile.
