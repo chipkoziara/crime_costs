@@ -66,7 +66,9 @@
 <div class='map-overlay' id='features'>
   <h2>Cost of Crime in Philadelphia Neighborhoods (2015)</h2>
   <div id='pd'>
-    <p>Hover over a Philadelphia neighborhood to see the cost of crime that took place there in 2015</p>
+    <p>Hover over a Philadelphia neighborhood to see the cost of crimes from 2015</p>
+      <p><em>Crime costs are calculated from the <a href="http://www.rand.org/jie/justice-policy/centers/quality-policing/cost-of-crime.html">RAND Corporation's cost of crime research</a>, adjusted for inflation</em></p>
+      <p>Check out the project on <a href="https://github.com/chipkoziara/crime_costs">GitHub</a><p>
   </div>
 </div>
 <div class='map-overlay' id='legend'>
@@ -94,9 +96,10 @@ map.on('load', function() {
     map.getCanvas().style.cursor = 'default';
 
     // set map bounds (do this and get rid of zoom and center below because it's better than center + zoom for mobile)
-    //map.fitBounds([[-133.2421875, 16.972741], [-47.63671875, 52.696361]]);
+    // first set of coordinates are lower left bounds, second set are upper right bounds
+    //map.fitBounds([[x, y], [x, y]]);
 
-    // define layer names
+    // define layer names - note: these have to match the layer names in the style from Mapbox Studio
     var layers = ['0-12.22', '12.22-33.06', '33.06-56.73', '56.73-75.25', '75.25-98.17', '98.17-126.54', '126.54-163.98', '163.98+']
 
     // create legend
@@ -121,7 +124,7 @@ map.on('load', function() {
         });
 
         if (crimes.length > 0) {
-            document.getElementById('pd').innerHTML = "<h3><strong>" + crimes[0].properties.LISTNAME + "</strong></h3><p>The total cost of crime in this neighborhood is " + "<strong><em>$" + parseFloat(crimes[0].properties.crime_cost/1000000).toFixed(2) + " million dollars</em></strong> primarily driven by societal costs associated with <strong><em>" + crimes[0].properties.prim_crime  + "</em></strong></p>";
+            document.getElementById('pd').innerHTML = "<h3><strong>" + crimes[0].properties.LISTNAME + "</strong></h3><p>The total cost of crime in this neighborhood was " + "<strong><em>$" + parseFloat(crimes[0].properties.crime_cost/1000000).toFixed(2) + " million dollars</em></strong> primarily driven by societal costs associated with <strong><em>" + crimes[0].properties.prim_crime  + "</em></strong></p>";
         } else {
             document.getElementById('pd').innerHTML = '<p>Hover over a Philadelphia neighborhood to see the cost of crime that took place there in 2015</p>';
         }
