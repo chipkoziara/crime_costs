@@ -1,7 +1,7 @@
 # Cost of Crime Calculator
 _An R script that calculates the total cost of crime for neighborhoods using the RAND Corporation's cost of crime values_
 
-See the output in a web map [here](https://chipkoziara.github.io/crime_costs/) built using <a href="https://www.mapbox.com/mapbox-gl-js/api/">Mapbox GL JS</a> and <a href="https://www.mapbox.com/mapbox-studio/">Mapbox Studio</a>! You can see the code in the <em><a href="https://github.com/chipkoziara/crime_costs/blob/master/index.html">index.html</a></em> file in this repo.
+See a visualization of the R script's output in a web map [here](https://chipkoziara.github.io/crime_costs/), which was built using <a href="https://www.mapbox.com/mapbox-gl-js/api/">Mapbox GL JS</a> and <a href="https://www.mapbox.com/mapbox-studio/">Mapbox Studio</a>! You can see the code in the <em><a href="https://github.com/chipkoziara/crime_costs/blob/master/index.html">index.html</a></em> file in this repo.
 
 <img src="img/phl.png" width="500px" alt="Cost of Crime for Philadelphia Neighborhoods">
 <br>_This shows the crime type with the greatest cost for each neighborhood in 2015_
