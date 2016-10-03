@@ -46,7 +46,7 @@
             padding: 10px;
             box-shadow: 0 1px 2px rgba(0,0,0,0.10);
             line-height: 18px;
-            height: 215px;
+            height: 245px;
             margin-bottom: 40px;
             width: 150px;
         }
@@ -66,7 +66,7 @@
 <div class='map-overlay' id='features'>
   <h2>Cost of Crime in Philadelphia Neighborhoods (2015)</h2>
   <div id='pd'>
-    <p>Hover over a Philadelphia neighborhood to see the cost of crimes from 2015</p>
+    <p>Hover over a Philadelphia neighborhood to see the cost of crime that occurred in 2015</p>
       <p><em>Crime costs are calculated from the <a href="http://www.rand.org/jie/justice-policy/centers/quality-policing/cost-of-crime.html">RAND Corporation's cost of crime research</a>, adjusted for inflation</em></p>
       <p>Check out the project on <a href="https://github.com/chipkoziara/crime_costs">GitHub</a><p>
   </div>
@@ -126,7 +126,7 @@ map.on('load', function() {
         if (crimes.length > 0) {
             document.getElementById('pd').innerHTML = "<h3><strong>" + crimes[0].properties.LISTNAME + "</strong></h3><p>The total cost of crime in this neighborhood was " + "<strong><em>$" + parseFloat(crimes[0].properties.crime_cost/1000000).toFixed(2) + " million dollars</em></strong> primarily driven by societal costs associated with <strong><em>" + crimes[0].properties.prim_crime  + "</em></strong></p>";
         } else {
-            document.getElementById('pd').innerHTML = '<p>Hover over a Philadelphia neighborhood to see the cost of crime that took place there in 2015</p>';
+            document.getElementById('pd').innerHTML = "<p>Hover over a Philadelphia neighborhood to see the cost of crime that occurred in 2015</p><p><em>Crime costs are calculated from the <a href='http://www.rand.org/jie/justice-policy/centers/quality-policing/cost-of-crime.html'>RAND Corporation's cost of crime research</a>, adjusted for inflation</em></p><p>Check out the project on <a href='https://github.com/chipkoziara/crime_costs'>GitHub</a><p>";
         }
     });
 
