@@ -124,9 +124,10 @@ map.on('load', function() {
         });
 
         if (crimes.length > 0) {
-            document.getElementById('pd').innerHTML = "<h3><strong>" + crimes[0].properties.LISTNAME + "</strong></h3><p>The total cost of crime in this neighborhood was " + "<strong><em>$" + parseFloat(crimes[0].properties.crime_cost/1000000).toFixed(2) + " million dollars</em></strong> primarily driven by societal costs associated with <strong><em>" + crimes[0].properties.prim_crime  + "</em></strong></p>";
+            document.getElementById('pd').innerHTML = "<h3><strong>" + crimes[0].properties.LISTNAME + "</strong></h3><p>The total cost of crime in this neighborhood was <strong><em>$" + parseFloat(crimes[0].properties.crime_cost/1000000).toFixed(2) + " million dollars</em></strong> primarily driven by societal costs associated with <strong><em>" + crimes[0].properties.prim_crime  + "</em></strong></p>";
         } else {
-            document.getElementById('pd').innerHTML = '<p>Hover over a Philadelphia neighborhood to see the cost of crime that took place there in 2015</p>';
+            document.getElementById('pd').innerHTML = '<p>Hover over a Philadelphia neighborhood to see the cost of crime that took place there in 2015</p>' + '<p><em>Crime costs are calculated from the <a href="http://www.rand.org/jie/justice-policy/centers/quality-policing/cost-of-crime.html">RAND Corporation\'s cost of crime research</a>, adjusted for inflation</em></p>'
+      <p>Check out the project on <a href="https://github.com/chipkoziara/crime_costs">GitHub</a><p>;
         }
     });
 
