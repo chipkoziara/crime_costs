@@ -30,7 +30,7 @@ Related notes:
 **What are next steps?**
 I plan to make it easier to plug in a new city's open crime data and neighborhood shapefile to make this portable to other municipalities.
 
-~~I also plan to introduce a web-based map that makes it easy to explore this data in the browser.~~ Done! Check it out <a href="https://chipkoziara.github.io/crime_costs/">here</a> or dig into the code in this repo in the<em><a href="https://github.com/chipkoziara/crime_costs/blob/master/index.html">index.html</a></em> file.
+~~I also plan to introduce a web-based map that makes it easy to explore this data in the browser.~~ Done! Check it out <a href="https://chipkoziara.github.io/crime_costs/">here</a> or dig into the code in this repo in the <em><a href="https://github.com/chipkoziara/crime_costs/blob/master/index.html">index.html</a></em> file.
 
 **Special Thanks**
 I'm using the the City of Philadelphia's [open crime data](https://www.opendataphilly.org/dataset/crime-incidents), the RAND Corporation's [cost of crime calculator](http://www.rand.org/jie/justice-policy/centers/quality-policing/cost-of-crime.html) values, and Azavea's excellent [Philadelphia neighborhoods](https://github.com/azavea/geo-data/tree/master/Neighborhoods_Philadelphia) shapefile.
